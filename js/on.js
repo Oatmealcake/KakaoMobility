@@ -4,7 +4,6 @@
 headerAction();
 function headerAction() {
   const setMediaQuery = function () {
-    console.log(innerWidth);
     if (window.innerWidth > 1080) {
       wideMenu.start();
     } else {
@@ -22,7 +21,6 @@ function headerAction() {
   const wideMenu = {
     pcScroll: function () {
       let sTop = htmlElem.scrollTop;
-      console.log(sTop);
       if (sTop > 30) {
         mainHeader.classList.add('on');
       } else {
@@ -54,7 +52,6 @@ function headerAction() {
   const mobileMenu = {
     mScroll: function () {
       let sTop = htmlElem.scrollTop;
-      console.log(sTop);
       if (sTop > 35) {
         mainHeader.classList.add('on');
       } else {
@@ -112,7 +109,6 @@ function headerAction() {
 motionAction();
 function motionAction() {
   const setMediaQuery = function () {
-    console.log(innerWidth);
     if (innerWidth > 1080) {
       wideEffect.start();
     } else {
@@ -154,7 +150,6 @@ function motionAction() {
     },
     pcScroll: function () {
       let sTop = htmlElem.scrollTop;
-      console.log(sTop);
 
       /* visual copyright */
       if (sTop > 600) {
